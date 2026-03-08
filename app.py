@@ -28,105 +28,125 @@ if 'history_data' not in st.session_state:
 # Custom CSS for better aesthetics
 st.markdown("""
 <style>
-    /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    /* Professional Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
     html, body, [class*="css"]  {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     
-    /* Main Background & Text */
+    /* Clean App Background */
     .stApp {
-        background-color: #f8fafc;
-        color: #0f172a;
+        background-color: #fafafa;
+        color: #111827;
     }
 
     .main-header {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 700;
-        background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #111827;
         text-align: center;
-        margin-bottom: 0px;
-        padding-top: 1rem;
+        margin-bottom: 0.5rem;
+        padding-top: 1.5rem;
+        letter-spacing: -0.025em;
     }
     .sub-header {
-        font-size: 1.25rem;
-        color: #64748b;
+        font-size: 1.15rem;
+        color: #4b5563;
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
         font-weight: 400;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    /* Buttons */
+    /* Professional Buttons */
     .stButton>button {
         width: 100%;
-        background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+        background-color: #111827;
         color: white;
-        border: none;
-        border-radius: 12px;
-        font-weight: 600;
-        padding: 0.75rem 0;
-        box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
-        transition: all 0.3s ease;
+        border: 1px solid #111827;
+        border-radius: 8px;
+        font-weight: 500;
+        padding: 0.6rem 0;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.2s ease;
     }
     .stButton>button:hover {
-        background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        background-color: #374151;
+        border-color: #374151;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        color: white;
     }
     
-    /* Text Display Boxes (Glassmorphism) */
+    /* Text Display Boxes */
     .text-box {
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(10px);
+        background: #ffffff;
         padding: 1.5rem;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        min-height: 200px;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        min-height: 250px;
         font-family: inherit;
         white-space: pre-wrap;
-        color: #1e293b;
+        color: #1f2937;
         line-height: 1.6;
+        font-size: 0.95rem;
     }
     
     /* Landing Features */
     .feature-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        background: #ffffff;
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         text-align: center;
-        border: 1px solid #f1f5f9;
-        transition: transform 0.3s ease;
+        border: 1px solid #e5e7eb;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .feature-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
-    .feature-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
+    .feature-icon-wrapper {
+        background: #f3f4f6;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+    }
+    .feature-icon-wrapper svg {
+        width: 32px;
+        height: 32px;
+        color: #4b5563;
     }
     .feature-title {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 600;
-        color: #0f172a;
-        margin-bottom: 0.5rem;
+        color: #111827;
+        margin-bottom: 0.75rem;
     }
     .feature-text {
-        color: #64748b;
-        font-size: 0.95rem;
-        line-height: 1.5;
+        color: #4b5563;
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # Application Header
-st.markdown('<p class="main-header">📝 Scribble to Digital</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Convert Messy Handwritten Notes to Structured Digital Text</p>', unsafe_allow_html=True)
+st.markdown('<p class="main-header">Scribble to Digital</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">Convert messy handwritten notes into structured, professional digital text instantly.</p>', unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
@@ -265,27 +285,33 @@ else:
     with col1:
         st.markdown("""
         <div class="feature-card">
-            <div class="feature-icon">📸</div>
+            <div class="feature-icon-wrapper">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </div>
             <div class="feature-title">Upload Notes</div>
-            <div class="feature-text">Snap a photo of your messy handwritten notes or ideas and upload the image file directly to the sidebar.</div>
+            <div class="feature-text">Snap a photo of your handwritten notes or ideas and upload the image file directly to the sidebar.</div>
         </div>
         """, unsafe_allow_html=True)
         
     with col2:
         st.markdown("""
         <div class="feature-card">
-            <div class="feature-icon">🤖</div>
+            <div class="feature-icon-wrapper">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+            </div>
             <div class="feature-title">AI Processing</div>
-            <div class="feature-text">Our system uses OpenCV and advanced Generative AI to enhance clarity and reconstruct unclear words automatically.</div>
+            <div class="feature-text">Our system uses advanced computer vision and Generative AI to enhance clarity and reconstruct unclear words.</div>
         </div>
         """, unsafe_allow_html=True)
         
     with col3:
         st.markdown("""
         <div class="feature-card">
-            <div class="feature-icon">✅</div>
+            <div class="feature-icon-wrapper">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            </div>
             <div class="feature-title">Extract To-Dos</div>
-            <div class="feature-text">Never miss a task. The AI intelligently separates actionable items into a clean, downloadable checklist.</div>
+            <div class="feature-text">Never miss a task. The engine intelligently separates actionable items into a clean, downloadable checklist.</div>
         </div>
         """, unsafe_allow_html=True)
 

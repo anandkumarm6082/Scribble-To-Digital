@@ -1,5 +1,19 @@
 [
     {
+        "id": "20260308115827",
+        "timestamp": "2026-03-08 11:58:27",
+        "raw_text": "Project Meeting Notes\u2019). 1.8 8\n_ = Discuss\u00e9d-the new'OCR feature \u00a9...\n- , We ried.to implmt the img pr\u00e9procsng scon: * -\n+ Get feedback from the client by friday...\n\u201d \u201cAlso remmber to by groceries: milk, eqqs, bred\n\"\u00a9 Todos: 37 OP Leen oo\n\u201c_* Fix.the styling bug.on main\u2018page\u2019 \u00a9\"\n\n\" Email John about the new requrements \u00b0\u00b0",
+        "corrected_text": "Project Meeting Notes:\n\n*   Discussed the new OCR feature.\n*   We tried to implement the image preprocessing soon.\n*   Get feedback from the client by Friday.\n\nTodos:\n\n*   Remember to buy groceries: milk, eggs, bread.\n*   Fix the styling bug on the main page.\n*   Email John about the new requirements.",
+        "todos": "To-Do List:\n*   Get feedback from the client by Friday.\n*   Remember to buy groceries: milk, eggs, bread.\n*   Fix the styling bug on the main page.\n*   Email John about the new requirements."
+    },
+    {
+        "id": "20260308114341",
+        "timestamp": "2026-03-08 11:43:41",
+        "raw_text": "Project Meeting Notes\u2019). 1.8 8\n_ = Discuss\u00e9d-the new'OCR feature \u00a9...\n- , We ried.to implmt the img pr\u00e9procsng scon: * -\n+ Get feedback from the client by friday...\n\u201d \u201cAlso remmber to by groceries: milk, eqqs, bred\n\"\u00a9 Todos: 37 OP Leen oo\n\u201c_* Fix.the styling bug.on main\u2018page\u2019 \u00a9\"\n\n\" Email John about the new requrements \u00b0\u00b0",
+        "corrected_text": "Project Meeting Notes.\n\nDuring the meeting, the new OCR feature was discussed. We also attempted to implement image preprocessing and aim to get client feedback by Friday.\n\nSeparately, remember to buy groceries: milk, eggs, and bread.\n\nThe To-do list includes fixing the styling bug on the main page and emailing John about the new requirements.",
+        "todos": "To-Do List:\n*   Get client feedback by Friday (regarding image preprocessing)\n*   Buy groceries: milk, eggs, and bread\n*   Fix the styling bug on the main page\n*   Email John about the new requirements"
+    },
+    {
         "id": "20260308111536",
         "timestamp": "2026-03-08 11:15:36",
         "raw_text": "Project Meeting Notes\u2019). 1.8 8\n_ = Discuss\u00e9d-the new'OCR feature \u00a9...\n- , We ried.to implmt the img pr\u00e9procsng scon: * -\n+ Get feedback from the client by friday...\n\u201d \u201cAlso remmber to by groceries: milk, eqqs, bred\n\"\u00a9 Todos: 37 OP Leen oo\n\u201c_* Fix.the styling bug.on main\u2018page\u2019 \u00a9\"\n\n\" Email John about the new requrements \u00b0\u00b0",
