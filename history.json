@@ -1,0 +1,9 @@
+[
+    {
+        "id": "20260308111536",
+        "timestamp": "2026-03-08 11:15:36",
+        "raw_text": "Project Meeting Notes\u2019). 1.8 8\n_ = Discuss\u00e9d-the new'OCR feature \u00a9...\n- , We ried.to implmt the img pr\u00e9procsng scon: * -\n+ Get feedback from the client by friday...\n\u201d \u201cAlso remmber to by groceries: milk, eqqs, bred\n\"\u00a9 Todos: 37 OP Leen oo\n\u201c_* Fix.the styling bug.on main\u2018page\u2019 \u00a9\"\n\n\" Email John about the new requrements \u00b0\u00b0",
+        "corrected_text": "**Project Meeting Notes**\n\n*   Discussed the new OCR feature.\n*   We tried to implement the image preprocessing soon.\n*   Get feedback from the client by Friday.\n*   Also remember to buy groceries: milk, eggs, bread.\n\n**To-Do List:**\n\n*   Fix the styling bug on the main page.\n*   Email John about the new requirements.",
+        "todos": "To-Do List:\n*   Implement the image preprocessing.\n*   Get feedback from the client by Friday.\n*   Buy groceries: milk, eggs, bread.\n*   Fix the styling bug on the main page.\n*   Email John about the new requirements."
+    }
+]
