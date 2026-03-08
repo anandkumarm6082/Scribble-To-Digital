@@ -1,3 +1,15 @@
+## 👥 Team
+
+**Project Lead:**
+- **ANAND KUMAR M** (6082@velsrscollege.com)
+
+**Members:**
+- **HIMESH SHARMA K** (6127@velsrscollege.com)
+- **DHANU SRI L** (6105@velsrscollege.com)
+- **TANGELLA BALAJI** (6093@velsrscollege.com)
+- **DHARANYA M** (6107@velsrscollege.com)
+
+
 # Scribble to Digital
 
 Turn messy handwritten notes, whiteboard sketches, and journal entries into clean, structured digital text and actionable to-do lists instantly using the power of AI.
@@ -63,17 +75,6 @@ The project has recently been migrated to a modern, decoupled architecture:
    npm run dev
    ```
 4. The application will be available at `http://localhost:5173` (or the port specified in your terminal).
-
-## 👥 Team
-
-**Project Lead:**
-- **ANAND KUMAR M** (6082@velsrscollege.com)
-
-**Members:**
-- **HIMESH SHARMA K** (6127@velsrscollege.com)
-- **DHANU SRI L** (6105@velsrscollege.com)
-- **TANGELLA BALAJI** (6093@velsrscollege.com)
-- **DHARANYA M** (6107@velsrscollege.com)
 
 ---
 
