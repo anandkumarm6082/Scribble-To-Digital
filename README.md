@@ -64,5 +64,18 @@ The project has recently been migrated to a modern, decoupled architecture:
    ```
 4. The application will be available at `http://localhost:5173` (or the port specified in your terminal).
 
+## 👥 Team
+
+**Project Lead:**
+- **ANAND KUMAR M** (6082@velsrscollege.com)
+
+**Members:**
+- **HIMESH SHARMA K** (6127@velsrscollege.com)
+- **DHANU SRI L** (6105@velsrscollege.com)
+- **TANGELLA BALAJI** (6093@velsrscollege.com)
+- **DHARANYA M** (6107@velsrscollege.com)
+
+---
+
 ## 🛡 License
 This project is open-source and available for educational and personal use.
